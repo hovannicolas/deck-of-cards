@@ -21,6 +21,9 @@ class Deck:
     def __repr__(self):
         return f"Deck of {len(self.cards)} cards."
 
+    def __iter__(self):
+        return iter(self.cards)
+
     def count(self):
         return len(self.cards)
 
@@ -43,6 +46,10 @@ class Deck:
 
     def deal_hand(self, hand_size):
         return self._deal(hand_size)
+
+
+
+
 
 
 
